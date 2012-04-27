@@ -9,13 +9,15 @@
    "Steven Byrnes"
    "Steven Reynolds"
    "Jim Theriot"
-   "Robert Boone"])
+   "Robert Boone"
+   "Jeremey Barrett"])
 
 (defpage "/"
   []
   (html
     (html5
       [:head
+       [:title "CHUG: Clojure/Houston Users Group"]
        (include-css "/css/bootstrap.css")
        (include-js "/js/bootstrap.min.js")]
       [:body 
@@ -26,11 +28,6 @@
           ]]
         [:div.row
          [:div.span12
-          [:h2 "Members"]
-          [:ul
-           (map #(vector :li %) members)]]]
-        [:div.row
-         [:div.span12
            [:h2 "Meeting Details"]
            [:ul
              [:li [:b "Time:"] " 7:00 pm on the fourth Thursday of the month"]
@@ -39,7 +36,16 @@
             ]]]
         [:div.row
          [:div.span12
+          [:h2 "Members"]
+          [:ul
+           (map #(vector :li %) members)]]]
+        [:div.row
+         [:div.span12
           [:h2 "Next Meeting (5/24)"]
           [:p "Work on the website."]]]
+        [:div.row
+         [:div.span12
+          [:h2 "Projects"]
+          [:p [:em "... you're looking at it ..."]]]]
         ]])))
 
