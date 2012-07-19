@@ -18,8 +18,8 @@
     (html5
       [:head
        [:title "CHUG: Clojure/Houston Users Group"]
-       (include-css "/css/bootstrap.css")
-       (include-js "/js/bootstrap.min.js")]
+       (include-css "/bootstrap/css/bootstrap.min.css")
+       (include-js "/bootstrap/js/bootstrap.min.js")]
       [:body 
        [:div.container
         [:div.row

@@ -2,9 +2,7 @@
   (:require [noir.server :as server]
             [ring.middleware.file :as wrap-file]))
 
-(server/load-views "src/cljhouston/views/")
-
-(server/add-middleware wrap-file/wrap-file "resources/bootstrap")
+(server/load-views-ns 'cljhouston.views)
 
 (defn -main [& m]
   (let [mode (keyword (or (first m) :dev))
