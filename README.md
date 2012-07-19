@@ -1,15 +1,11 @@
-# cljhouston
-
-I'm an app. Or maybe I'm a library? I haven't decided yet. 
-
-The choice is up to you!
+# The clojure houston website
 
 ## Usage
 
-FIXME
+```lein run``` will start a server hosting it locally.
 
 ## License
 
-Copyright © 2012 FIXME
+Copyright © 2012 Contributors
 
 Distributed under the Eclipse Public License, the same as Clojure.
