@@ -1,7 +1,6 @@
 (ns cljhouston.views.welcome
-  (:use 
-    [hiccup core page element]
-    noir.core))
+  (:use [hiccup core page element]
+        noir.core))
 
 (def members
   ["Daniel Solano Gómez"
@@ -11,6 +10,10 @@
    "Jim Theriot"
    "Robert Boone"
    "Jeremey Barrett"])
+
+(def meetings
+  [["5/24/2012" "Work on the website."]
+   ["7/26/2012" "Clojure Macros through the Lens of Generative programming"]])
 
 (defpage "/"
   []
@@ -39,9 +42,10 @@
         [:ul
          (map #(vector :li %) members)]]]
       [:div.row
-       [:div.span12
-        [:h2 "Next Meeting (5/24)"]
-        [:p "Work on the website."]]]
+       (let [[date topic] (last meetings)]
+         [:div.span12
+          [:h2 (str "Next Meeting (" date ")")]
+          [:p topic]])]
       [:div.row
        [:div.span12
         [:h2 "Projects"]
