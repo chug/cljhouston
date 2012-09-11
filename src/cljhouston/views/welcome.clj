@@ -29,7 +29,7 @@
      [:div.container
       [:div.row
        [:div.span12
-        [:h1 "CHUG: Clojure/Houston Users Group"]]]
+        [:h1.page-header "CHUG: Clojure/Houston Users Group"]]]
       [:div.row
        [:div.span12
         [:h2 "Meeting Details"]
