@@ -15,7 +15,7 @@
   [["5/24/2012" "Coding: Work on the website."]
    ["7/26/2012" "Clojure Macros through the Lens of Generative programming"]
    ["8/23/2012" "Watch video from clojure/west"]
-   ["9/27/2012" "Coding: ???"]])
+   ["9/27/2012" "Pulling data from a database + Coding"]])
 
 (defpage "/"
   []
