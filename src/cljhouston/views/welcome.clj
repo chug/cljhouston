@@ -16,7 +16,7 @@
    ["7/26/2012" "Clojure Macros through the Lens of Generative programming"]
    ["8/23/2012" "Watch video from clojure/west"]
    ["9/27/2012" "Pulling data from a database + Coding"]
-   ["10/25/2012" "How to use Enlive"])
+   ["10/25/2012" "How to use Enlive"]])
 
 (defpage "/"
   []
